@@ -27,10 +27,10 @@ function open(elm) {
      
     })
     
-//      elm.addEventListener('touch', () => {
-//          let content = elm.nextElementSibling;
-//         content.classList.remove('p-active');
-//     })
+     elm.addEventListener('touch', () => {
+         let content = elm.nextElementSibling;
+        content.classList.remove('p-active');
+    })
 
 }
 
