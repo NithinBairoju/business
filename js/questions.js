@@ -21,16 +21,18 @@ function open(elm) {
     // let content2 = elm.firstChild.nextElementSibling;
     // let content3 = content2.nextElementSibling;
     
-    elm.addEventListener('mouseout', () => {
-        let content = elm.nextElementSibling;
-        content.classList.remove('p-active');
-     
-    })
+ 
      if (window.innerWidth < 900){
         elm.addEventListener('click', () => {
             let content = elm.nextElementSibling;
             content.classList.remove('p-active');
          })
+     }else{
+        elm.addEventListener('mouseout', () => {
+        let content = elm.nextElementSibling;
+        content.classList.remove('p-active');
+     
+       })     
      }
 
 }
