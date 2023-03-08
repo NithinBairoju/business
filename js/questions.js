@@ -23,7 +23,8 @@ function open(elm) {
     })
     
      elm.addEventListener('touchstart', () => {
-        open(e);
+         let content = elm.nextElementSibling;
+        content.classList.remove('p-active');
     })
 
 }
