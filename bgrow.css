@@ -11,6 +11,10 @@ body {
 
 }
 
+.bodyy{
+ overflow-y:hidden;   
+}
+
 body::-webkit-scrollbar {
     width: 1rem;
     border: 0.3px solid #f7ecea;
