@@ -26,6 +26,8 @@ transDiv.addEventListener('click', navToggler)
 function navToggler() {
     navbar.classList.toggle('active-nav');
     transDiv.classList.toggle('active-nav');
+    
+    document.body.classList.toggle('bodyy');
     // checking state of nav bar for hamburger 
     if (navValue === false) {
         navValue = true
@@ -36,10 +38,8 @@ function navToggler() {
     // changing hamburger
     if (navValue === true) {
         burgerImg.src = 'BG-images/closeicon.png'
-        document.body.style.overflowY = 'hidden';
     } else {
         burgerImg.src = 'BG-images/hamburger.png'
-        document.body.style.overflowY = 'scroll';
     }
 }
 
