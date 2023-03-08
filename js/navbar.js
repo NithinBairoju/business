@@ -13,11 +13,13 @@ burger.addEventListener('click', navToggler)
 
 transDiv.addEventListener('click', navToggler)
 
-if (window.innerwidth > 900) {
+
     navlinks.forEach((e) => {
+        if (window.innerwidth < 900) {
         e.addEventListener('click', navToggler)
+            }
     })
-}
+
 
 
 
