@@ -9,16 +9,24 @@ const navlinks = document.querySelectorAll('.navbar-link');
 const section = document.querySelectorAll('section');
 let navValue = false;
 
-burger.addEventListener('click', navToggler)
+burger.addEventListener('click', ()=>{
+    navToggler();
+    bodyY();
+})
 
-transDiv.addEventListener('click', navToggler)
+transDiv.addEventListener('click', ()=>{
+    navToggler();
+    bodyY();
+})
 
 
     navlinks.forEach((e) => {
         e.addEventListener('click', navToggler)
         
     })
-
+function bodyY(){
+     document.body.classList.toggle('bodyy');
+}
 
 
 
