@@ -11,12 +11,12 @@ let navValue = false;
 
 burger.addEventListener('click', ()=>{
     navToggler();
-    bodyY();
+
 })
 
 transDiv.addEventListener('click', ()=>{
     navToggler();
-    bodyY();
+
 })
 
 
@@ -34,7 +34,7 @@ function navToggler() {
     navbar.classList.toggle('active-nav');
     transDiv.classList.toggle('active-nav');
 
-        if (window.innerwidth < 900) {
+        if(document.getElementById('mobile-nav').classList != 'active-nav'){
            document.body.classList.toggle('bodyy');
         }
 
