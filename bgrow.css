@@ -577,6 +577,8 @@ a {
 
     .services-card {
         max-width: 100%;
+        flex-direction: column;
+
     }
 }
 
