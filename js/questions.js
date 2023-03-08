@@ -2,10 +2,16 @@ const bar = document.querySelectorAll('.collapse');
 const para = document.querySelectorAll('.p-none');
 let valueImg = false;
 bar.forEach((e) => {
-    e.addEventListener('mouseover', () => {
-        open(e);
-    })
-    
+   
+     if (window.innerWidth < 900){
+        e.addEventListener('touchstart', () => {
+            open(e);
+        })
+     }else{
+        e.addEventListener('mouseover', () => {
+            open(e);
+        })
+     }
 })
 
 
