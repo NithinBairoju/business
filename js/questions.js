@@ -5,9 +5,7 @@ bar.forEach((e) => {
     e.addEventListener('mouseover', () => {
         open(e);
     })
-     e.addEventListener('touchstart', () => {
-        open(e);
-    })
+    
 })
 
 
@@ -22,6 +20,10 @@ function open(elm) {
         let content = elm.nextElementSibling;
         content.classList.remove('p-active');
      
+    })
+    
+     elm.addEventListener('touchstart', () => {
+        open(e);
     })
 
 }
