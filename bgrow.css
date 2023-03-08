@@ -740,9 +740,10 @@ a {
     }
 
 
-    footer {
-        padding: 10px 0px;
-    }
+  .footer {
+   
+    padding: 50px 10px;
+}
 
     .footer-links {
         width: 100%;
