@@ -11,32 +11,22 @@ let navValue = false;
 
 burger.addEventListener('click', ()=>{
     navToggler();
-
 })
-
 transDiv.addEventListener('click', ()=>{
     navToggler();
-
 })
 
-
-    navlinks.forEach((e) => {
-        e.addEventListener('click', navToggler)
-        
-    })
-function bodyY(){
-     document.body.classList.toggle('bodyy');
-}
-
-
+navlinks.forEach((e) => {
+    e.addEventListener('click', navToggler)
+})
 
 function navToggler() {
     navbar.classList.toggle('active-nav');
     transDiv.classList.toggle('active-nav');
 
-        if(document.getElementById('mobile-nav').classList != 'active-nav'){
+    if(document.getElementById('mobile-nav').classList != 'active-nav'){
            document.body.classList.toggle('bodyy');
-        }
+     }
 
 
     // checking state of nav bar for hamburger 
