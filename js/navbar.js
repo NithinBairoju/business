@@ -25,8 +25,12 @@ transDiv.addEventListener('click', navToggler)
 function navToggler() {
     navbar.classList.toggle('active-nav');
     transDiv.classList.toggle('active-nav');
-    
-    document.body.classList.toggle('bodyy');
+
+        if (window.innerwidth < 900) {
+           document.body.classList.toggle('bodyy');
+        }
+
+
     // checking state of nav bar for hamburger 
     if (navValue === false) {
         navValue = true
