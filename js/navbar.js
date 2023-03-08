@@ -15,9 +15,8 @@ transDiv.addEventListener('click', navToggler)
 
 
     navlinks.forEach((e) => {
-        if (window.innerwidth < 900) {
         e.addEventListener('click', navToggler)
-            }
+        
     })
 
 
